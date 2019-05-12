@@ -10,10 +10,10 @@
 import countService from '../services/countService';
 
 export default {
-    data() {
-      return {
-        count: countService.value()
-      }
+  data() {
+    return {
+      count: countService.value()
     }
+  }
 };
 </script>

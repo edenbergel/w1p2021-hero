@@ -18,9 +18,9 @@ export default {
     };
   },
   methods: {
-      handleClick() {
-        countService.increment();
-      }
+    handleClick() {
+      countService.increment();
+    }
   }
 };
 </script>
