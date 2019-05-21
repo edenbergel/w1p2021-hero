@@ -221,4 +221,3 @@ Notes :
 | Multimédia | L'expérience présente une vidéo ou plus | - |
 | Multimédia | L'expérience présente un audio ou plus | - |
 | Multimédia | L'utilisateur a la possibilité de couper le son à tout moment | - |
-| Facultatif | Le repository contient un dossier /ressources contenant toutes les ressources ayant servi à la conception du jeu (schéma, design, figma...) | - |
