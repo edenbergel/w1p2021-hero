@@ -201,6 +201,7 @@ Notes :
 | Setup | Le site est en ligne, et l'URL est citée dans le README.md | - |
 | Setup | Le site utilise VueJS | - |
 | Setup | Cloner le repository et exécuter `npm install` puis `npm run dev` s'effectue sans encombre | - |
+| Données | Un schéma numérique ou papier (scanné ou photographié) décrivant les différentes étapes et enchaînements possible. Affiché dans ce readme (si plusieurs images sont nécessaires, en afficher plusieurs, mais essayer d'être synthétique). | - |
 | Données | Un fichier `data.json` est utilisé pour stocker la structure du jeu | - |
 | Données | Le fichier `data.json` décrit 30 phases de jeu ou plus. Indiquez *En partie* s'il en décrit plus de 15. | - |
 | Pages | Une page d'accueil est présente | - |
