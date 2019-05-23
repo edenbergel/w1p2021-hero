@@ -6,19 +6,19 @@
         <path id="rain-line" fill="none" stroke-width="2" stroke="#FFFFFF"
               d="M1,0 L1,1000" stroke-linecap="round" stroke-dasharray="50 160 70 270"/>
         <pattern id="rain" width="500" height="500" patternUnits="userSpaceOnUse">
-            <use class="rain-line-svg" xlink:href="#rain-line" transform="translate(10 0)"/>
-            <use class="rain-line-svg" xlink:href="#rain-line" transform="translate(200 -200)"/>
-            <use class="rain-line-svg" xlink:href="#rain-line" transform="translate(350 -300)"/>
-            <use class="rain-line-svg" xlink:href="#rain-line" transform="translate(490 -400)"/>
-            <use class="rain-line-svg" xlink:href="#rain-line" transform="translate(75 -20)"/>
-            <use class="rain-line-svg" xlink:href="#rain-line" transform="translate(140 -120)"/>
-            <use class="rain-line-svg" xlink:href="#rain-line" transform="translate(270 -220)"/>
-            <use class="rain-line-svg" xlink:href="#rain-line" transform="translate(400 -320)"/>
-            <use class="rain-line-svg" xlink:href="#rain-line" transform="translate(450 -420)"/>
-            <use class="rain-line-svg" xlink:href="#rain-line" transform="translate(105 -180)"/>
-            <use class="rain-line-svg" xlink:href="#rain-line" transform="translate(165 -270)"/>
-            <use class="rain-line-svg" xlink:href="#rain-line" transform="translate(375 -370)"/>
-            <use class="rain-line-svg" xlink:href="#rain-line" transform="translate(460 -500)"/>
+            <use class="rain-line-svg" v-bind="{'xlink:href':'#rain-line'}" transform="translate(10 0)"/>
+            <use class="rain-line-svg" v-bind="{'xlink:href':'#rain-line'}" transform="translate(200 -200)"/>
+            <use class="rain-line-svg" v-bind="{'xlink:href':'#rain-line'}" transform="translate(350 -300)"/>
+            <use class="rain-line-svg" v-bind="{'xlink:href':'#rain-line'}" transform="translate(490 -400)"/>
+            <use class="rain-line-svg" v-bind="{'xlink:href':'#rain-line'}" transform="translate(75 -20)"/>
+            <use class="rain-line-svg" v-bind="{'xlink:href':'#rain-line'}" transform="translate(140 -120)"/>
+            <use class="rain-line-svg" v-bind="{'xlink:href':'#rain-line'}" transform="translate(270 -220)"/>
+            <use class="rain-line-svg" v-bind="{'xlink:href':'#rain-line'}" transform="translate(400 -320)"/>
+            <use class="rain-line-svg" v-bind="{'xlink:href':'#rain-line'}" transform="translate(450 -420)"/>
+            <use class="rain-line-svg" v-bind="{'xlink:href':'#rain-line'}" transform="translate(105 -180)"/>
+            <use class="rain-line-svg" v-bind="{'xlink:href':'#rain-line'}" transform="translate(165 -270)"/>
+            <use class="rain-line-svg" v-bind="{'xlink:href':'#rain-line'}" transform="translate(375 -370)"/>
+            <use class="rain-line-svg" v-bind="{'xlink:href':'#rain-line'}" transform="translate(460 -500)"/>
         </pattern>
     </defs>
 </svg>
@@ -165,6 +165,7 @@ export default {
       height: 10px;
       width: 90%;
       opacity: 0;
+
       transition-duration: 0.3s;
       transition-property: transform, opacity;
       opacity: .4;
