@@ -1,5 +1,5 @@
 <template>
-  <div rel="preload" v-bind:style="{ 'background': 'url('+ step.img +')' + 'no-repeat center fixed / cover', 'overflow': 'hidden' }">
+  <div class="game" rel="preload" v-bind:style="{ 'background': 'url('+ step.img +')' + 'no-repeat center fixed / cover', 'overflow': 'hidden' }">
   <svg class="defs-svg" viewBox="0 0 2 500">
     <title>Defs</title>
     <defs>
@@ -77,6 +77,10 @@ export default {
     doActions(action) {
       if (action.to) {
         this.$router.push({params: {id: action.to}})
+        document.querySelector('.game').classList.add('pane-enter-active' && 'pane-leave-active')
+        setTimeout(function() {
+          document.querySelector('.game').classList.remove('pane-enter-active' && 'pane-leave-active')
+        }, 5000)
       }
       if (action.lose === 'Game Over') {
         localStorage.setItem('endGame', action.reason)
@@ -128,7 +132,6 @@ export default {
 .section__title {
   display: flex;
   justify-content: center;
-
 }
 
 .game__title {
@@ -151,7 +154,7 @@ export default {
   line-height: 2rem;
   color: white;
   font-size: 1.5rem;
-      transition-duration: 0.3s;
+    transition-duration: 0.3s;
     transition-property: transform;
     transform: translateZ(0);
     box-shadow: 0 0 1px rgba(0, 0, 0, 0);
@@ -276,5 +279,51 @@ export default {
     100% {
         stroke-dashoffset: -550px;
     }
+}
+
+.pane-leave-active,
+.pane-enter-active {
+  &::after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    transform: translateX(100vw);
+    background: black;
+  }
+}
+
+.pane-leave-active {
+  animation: fake 0.5s;
+
+  &::after {
+    animation: slideLeave 1s;
+  }
+}
+
+.pane-enter-active {
+  animation: fake 2s;
+
+  &::after {
+    animation: slideEnter 0.5s ease 0.5s;
+  }
+}
+
+@keyframes slideLeave {
+  to {
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideEnter {
+  from {
+    transform: translate(0);
+  }
+  to {
+    transform: translateX(-100vw);
+  }
 }
 </style>

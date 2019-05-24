@@ -2,7 +2,7 @@
     "steps": [ 
       {
         "id": 1,
-        "title": "La marre au crocodile se trouve face à toi, que vas tu décider de faire ? Fait le bon choix ou les crocodiles te choisiront comme proie !",
+        "title": "La mare au crocodile se trouve face à toi, que vas tu décider de faire ? Fait le bon choix ou les crocodiles te choisiront comme proie !",
         "img": "../assets/images/bg.png",
         "actions": [
           {
