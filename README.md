@@ -9,7 +9,7 @@ URL du site : http://underthedome.netlify.com
 
 ### Shéma explicatif
 
-![Shéma]()
+![Shéma](https://github.com/edenbergel/w1p2021-hero-bergel-bergel/blob/master/app/assets/images/1.png)
 
 ### Grille d'auto-évaluation
 
