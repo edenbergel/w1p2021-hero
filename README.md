@@ -7,6 +7,10 @@ URL du site : http://underthedome.netlify.com
 - Eden Bergel
 - Hanna Bergel
 
+### Shéma explicatif
+
+![Shéma]()
+
 ### Grille d'auto-évaluation
 
 | Type  | Objectif | Fait ? | 
