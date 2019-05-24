@@ -2,7 +2,7 @@
 
 URL du site : http://underthedome.netlify.com
 
-###  Groupe
+### Groupe
 
 - Eden Bergel
 - Hanna Bergel
@@ -12,7 +12,7 @@ URL du site : http://underthedome.netlify.com
 | Type  | Objectif | Fait ? | 
 | ----- | -------- | ------ |
 | Setup | Le repository respecte la nomenclature `w1p2021-hero-amsellem-calou`, avec tous les noms des membres, et les membres sont cités dans le README.md | - OUI|
-| Setup | Le site est en ligne, et l'URL est citée dans le README.md | - |
+| Setup | Le site est en ligne, et l'URL est citée dans le README.md | - OUI|
 | Setup | Le site utilise VueJS | - OUI|
 | Setup | Cloner le repository et exécuter `npm install` puis `npm run dev` s'effectue sans encombre | - OUI|
 | Données | Un schéma numérique ou papier (scanné ou photographié) décrivant les différentes étapes et enchaînements possible. Affiché dans ce readme (si plusieurs images sont nécessaires, en afficher plusieurs, mais essayer d'être synthétique). | - |
