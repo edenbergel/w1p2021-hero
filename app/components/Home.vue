@@ -1,5 +1,6 @@
 <template>
   <div class="big-header">
+
     <img class="home__img" src="../assets/images/title.png" alt="title-game">
    
     <section class="home-button">

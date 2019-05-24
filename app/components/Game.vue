@@ -1,5 +1,8 @@
 <template>
   <div class="game" rel="preload" v-bind:style="{ 'background': 'url('+ step.img +')' + 'no-repeat center fixed / cover', 'overflow': 'hidden' }">
+  <audio autoplay loop>
+      <source src="../assets/images/pluiebruit.mp3" type="audio/mpeg">
+    </audio>
   <svg class="defs-svg" viewBox="0 0 2 500">
     <title>Defs</title>
     <defs>

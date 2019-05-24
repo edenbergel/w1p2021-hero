@@ -1,6 +1,9 @@
 <template>
 <transition name="characters" appear >
   <div>
+    <audio autoplay>
+      <source src="../assets/images/winner-sound-effect.mp3" type="audio/mpeg">
+    </audio>
     <section class="titleLose">
       <h2>Bravo, l'éclair a réactivé le pouvoir du coeur de la jungle ! Tu as gagné et détruit le Dome.</h2>
       <h1>TU AS GAGNÉ</h1>

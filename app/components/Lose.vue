@@ -1,6 +1,9 @@
 <template>
 <transition name="characters" appear >
   <div>
+    <audio autoplay>
+      <source src="../assets/images/game-over-voice.mp3" type="audio/mpeg">
+    </audio>
     <section class="titleLose">
       <h1>TU AS PERDU</h1> 
       <br>
