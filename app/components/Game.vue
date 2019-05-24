@@ -94,13 +94,21 @@ export default {
       if (action.video === 'Challenge Suivant autre') {
         this.$router.push({path: '/videoo'})
       }
-      if (action.title === 'Tu es attiré par les sortilèges de la Sorcière. À tu pris le bon objet pour te défendre ?' && localStorage.getItem('label') === 'Un pentacle')  {
-        this.$router.push({ path: 'game/26'})
-      }
-      if (action.weapon){
+      if (action.weapon) {
         gameService.weapon = action.weapon
+        localStorage.setItem('weapon', action.weapon) 
+      }
+      if (this.step.id === 25) {
+        let weapon = localStorage.getItem('weapon')
+        if (weapon === 'Un pentacle') {
+          this.$router.push({ path: '/game/26'})
+        }
+        else {
+          this.$router.push({ path: '/lose'})
+        }
       }
       console.log(gameService)
+      
     },
     canDoAction(action) {
       if(action.onlyMan && localStorage.getItem('speciality') !== 'The Explorer') {
