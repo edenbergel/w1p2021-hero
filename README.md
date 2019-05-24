@@ -36,4 +36,4 @@ URL du site : http://underthedome.netlify.com
 | Multimédia | L'expérience présente un audio ou plus | - OUI|
 | Multimédia | L'utilisateur a la possibilité de couper le son à tout moment | - NON|
 
-![alt tag](1.png)
+![alt text](1.png)
