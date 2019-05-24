@@ -2,7 +2,7 @@
 
 URL du site : http://underthedome.netlify.com
 
-### Groupe
+###  Groupe
 
 - Eden Bergel
 - Hanna Bergel
